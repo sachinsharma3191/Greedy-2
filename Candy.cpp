@@ -17,14 +17,14 @@ Now start Iterating array from index 1.
 let current_elem = array[i];
 let left_neigh  = array[i -1];
  if current_elem > left_neigh then
-    result = current_elem
+    result[i] = result[i] + 1
 Keep repeating until all elements are processed
 
 Now start array traversal from end;
 let curr_elem = array[i];
 let righ_neigh = array[i + 1];
- if current_elem > left_neigh then
-    result = max(result,current_elem)
+ if current_elem > right_neigh then
+    result = max(result[i] + 1,result[i]) + 1
 Keep repeating until all elements are processed
 
 So 2 Iterations will be processed for Finding Max Candy
